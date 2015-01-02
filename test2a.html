@@ -1,0 +1,70 @@
+<html>
+<head>
+<script src="https://code.jquery.com/jquery-1.11.2.min.js"></script>
+<script src="https://code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+<script type="text/javascript"
+      src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_SVG">
+</script>
+    <script type="text/javascript" src="svg_mathjax2.js">
+    </script>
+</head>
+<body>
+
+<style>
+
+</style>
+
+<div id="fig_el20182406373929750275051"></div>
+<script>
+function mpld3_load_lib(url, callback){
+  var s = document.createElement('script');
+  s.src = url;
+  s.async = true;
+  s.onreadystatechange = s.onload = callback;
+  s.onerror = function(){console.warn("failed to load library " + url);};
+  document.getElementsByTagName("head")[0].appendChild(s);
+}
+
+if(typeof(mpld3) !== "undefined" && mpld3._mpld3IsLoaded){
+   // already loaded: just create the figure
+   !function(mpld3){
+       
+       mpld3.draw_figure("fig_el20182406373929750275051", {"axes": [{"xlim": [0.0, 3.0], "yscale": "linear", "axesbg": "#FFFFFF", "texts": [{"v_baseline": "hanging", "h_anchor": "middle", "color": "#000000", "text": "some numbers", "coordinates": "axes", "zorder": 3, "alpha": 1, "fontsize": 12.0, "position": [0.5, -0.12499999999999999], "rotation": -0.0, "id": "el2018240482448"}, {"v_baseline": "auto", "h_anchor": "middle", "color": "#000000", "text": "\(|H(e^{j\\omega})|\)", "coordinates": "axes", "zorder": 3, "alpha": 1, "fontsize": 12.0, "position": [-0.095614919354838707, 0.5], "rotation": -90.0, "id": "el2018240572176"}], "zoomable": true, "images": [], "xdomain": [0.0, 3.0], "ylim": [1.0, 4.0], "paths": [], "sharey": [], "sharex": [], "axesbgalpha": null, "axes": [{"scale": "linear", "tickformat": null, "grid": {"gridOn": false}, "fontsize": 12.0, "position": "bottom", "nticks": 7, "tickvalues": null}, {"scale": "linear", "tickformat": null, "grid": {"gridOn": false}, "fontsize": 12.0, "position": "left", "nticks": 7, "tickvalues": null}], "lines": [{"color": "#0000FF", "yindex": 1, "coordinates": "data", "dasharray": "10,0", "zorder": 2, "alpha": 1, "xindex": 0, "linewidth": 1.0, "data": "data01", "id": "el2018239570256"}], "markers": [], "id": "el2018240638480", "ydomain": [1.0, 4.0], "collections": [], "xscale": "linear", "bbox": [0.125, 0.099999999999999978, 0.77500000000000002, 0.80000000000000004]}], "height": 240.0, "width": 400.0, "plugins": [{"type": "reset"}, {"enabled": false, "button": true, "type": "zoom"}, {"enabled": false, "button": true, "type": "boxzoom"}], "data": {"data01": [[0.0, 1.0], [1.0, 2.0], [2.0, 3.0], [3.0, 4.0]]}, "id": "el2018240637392"});
+
+                 new Svg_MathJax().install();
+
+   }(mpld3);
+}else if(typeof define === "function" && define.amd){
+   // require.js is available: use it to load d3/mpld3
+   require.config({paths: {d3: "https://mpld3.github.io/js/d3.v3.min"}});
+   require(["d3"], function(d3){
+      window.d3 = d3;
+      mpld3_load_lib("https://mpld3.github.io/js/mpld3.v0.2.js", function(){
+         
+         mpld3.draw_figure("fig_el20182406373929750275051", {"axes": [{"xlim": [0.0, 3.0], "yscale": "linear", "axesbg": "#FFFFFF", "texts": [{"v_baseline": "hanging", "h_anchor": "middle", "color": "#000000", "text": "some numbers", "coordinates": "axes", "zorder": 3, "alpha": 1, "fontsize": 12.0, "position": [0.5, -0.12499999999999999], "rotation": -0.0, "id": "el2018240482448"}, {"v_baseline": "auto", "h_anchor": "middle", "color": "#000000", "text": "\(|H(e^{j\\omega})|\)", "coordinates": "axes", "zorder": 3, "alpha": 1, "fontsize": 12.0, "position": [-0.095614919354838707, 0.5], "rotation": -90.0, "id": "el2018240572176"}], "zoomable": true, "images": [], "xdomain": [0.0, 3.0], "ylim": [1.0, 4.0], "paths": [], "sharey": [], "sharex": [], "axesbgalpha": null, "axes": [{"scale": "linear", "tickformat": null, "grid": {"gridOn": false}, "fontsize": 12.0, "position": "bottom", "nticks": 7, "tickvalues": null}, {"scale": "linear", "tickformat": null, "grid": {"gridOn": false}, "fontsize": 12.0, "position": "left", "nticks": 7, "tickvalues": null}], "lines": [{"color": "#0000FF", "yindex": 1, "coordinates": "data", "dasharray": "10,0", "zorder": 2, "alpha": 1, "xindex": 0, "linewidth": 1.0, "data": "data01", "id": "el2018239570256"}], "markers": [], "id": "el2018240638480", "ydomain": [1.0, 4.0], "collections": [], "xscale": "linear", "bbox": [0.125, 0.099999999999999978, 0.77500000000000002, 0.80000000000000004]}], "height": 240.0, "width": 400.0, "plugins": [{"type": "reset"}, {"enabled": false, "button": true, "type": "zoom"}, {"enabled": false, "button": true, "type": "boxzoom"}], "data": {"data01": [[0.0, 1.0], [1.0, 2.0], [2.0, 3.0], [3.0, 4.0]]}, "id": "el2018240637392"});
+      });
+    });
+}else{
+    // require.js not available: dynamically load d3 & mpld3
+
+   console.log('dynamically loading d3 and mpld3');
+    mpld3_load_lib("https://mpld3.github.io/js/d3.v3.min.js", function(){
+         mpld3_load_lib("https://mpld3.github.io/js/mpld3.v0.2.js", function(){
+                 
+                 mpld3.draw_figure("fig_el20182406373929750275051", {"axes": [{"xlim": [0.0, 3.0], "yscale": "linear", "axesbg": "#FFFFFF", "texts": [{"v_baseline": "hanging", "h_anchor": "middle", "color": "#000000", "text": "\\(f(x)=\\sqrt{\\alpha+2}\\)", "coordinates": "axes", "zorder": 3, "alpha": 1, "fontsize": 12.0, "position": [0.5, -0.12499999999999999], "rotation": -0.0, "id": "el2018240482448"}, {"v_baseline": "auto", "h_anchor": "middle", "color": "#000000", "text": "\\( |H(e^{j\\omega})| \\)", "coordinates": "axes", "zorder": 3, "alpha": 1, "fontsize": 12.0, "position": [-0.095614919354838707, 0.5], "rotation": -90.0, "id": "el2018240572176"}], "zoomable": true, "images": [], "xdomain": [0.0, 3.0], "ylim": [1.0, 4.0], "paths": [], "sharey": [], "sharex": [], "axesbgalpha": null, "axes": [{"scale": "linear", "tickformat": null, "grid": {"gridOn": false}, "fontsize": 12.0, "position": "bottom", "nticks": 7, "tickvalues": null}, {"scale": "linear", "tickformat": null, "grid": {"gridOn": false}, "fontsize": 12.0, "position": "left", "nticks": 7, "tickvalues": null}], "lines": [{"color": "#0000FF", "yindex": 1, "coordinates": "data", "dasharray": "10,0", "zorder": 2, "alpha": 1, "xindex": 0, "linewidth": 1.0, "data": "data01", "id": "el2018239570256"}], "markers": [], "id": "el2018240638480", "ydomain": [1.0, 4.0], "collections": [], "xscale": "linear", "bbox": [0.125, 0.099999999999999978, 0.77500000000000002, 0.80000000000000004]}], "height": 240.0, "width": 400.0, "plugins": [{"type": "reset"}, {"enabled": false, "button": true, "type": "zoom"}, {"enabled": false, "button": true, "type": "boxzoom"}], "data": {"data01": [[0.0, 1.0], [1.0, 2.0], [2.0, 3.0], [3.0, 4.0]]}, "id": "el2018240637392"});
+
+$( document ).ready(function() {
+                 new Svg_MathJax().install();
+});
+
+            })
+         });
+}
+</script>
+
+<!-- 
+<div>Hello world \(x=\alpha/2\)</div>
+-->
+
+</body>
+</html>
